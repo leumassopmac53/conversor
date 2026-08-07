@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SVG Converter</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<h1>SVG → PNG</h1>
+
+
+<label for="file">
+    Escolher arquivo
+</label>
+
+<input type="file" id="file" accept="image/svg+xml">
+
+
+<img id="preview">
+
+
+<input 
+type="number"
+placeholder="Tamanho"
+id="tamanho"
+value="512">
+
+
+<button id="criar">
+Converter
+</button>
+
+
+</div>
+
+
+<script src="code.js"></script>
+<script>
+  function rodaServiceWorker(){
+  if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("sw.js").then(r =>{
+      console.log(`${r}, registrado`)
+    }).catch(()=>{
+      console.log("sw não registrado")
+    })
+  }
+}
+
+rodaServiceWorker();
+</script>
+</body>
+</html>

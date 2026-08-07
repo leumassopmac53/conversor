@@ -1,0 +1,22 @@
+{
+  "name":"conversor SVG/PNG",
+  "short_name":"conversor",
+  "description": "É um conversor que converte SVG para PNG.",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"hsl(240,70%,70%)",
+  "theme_color":"hsl(240,70%,70%)",
+  "orientation":"portrait",
+  "icons":[
+    {
+      "src":"./icon-192.png",
+      "sizes":"192x192",
+      "type":"image/png"
+    },
+    {
+      "src":"./icon-512.png",
+      "sizes":"512x512",
+      "type":"image/png"
+    }
+    ]
+}
