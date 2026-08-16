@@ -1,6 +1,6 @@
 {
-  "name":"conversor SVG/PNG",
-  "short_name":"conversor",
+  "name":"Conversor SVG/PNG",
+  "short_name":"Conversor",
   "description": "É um conversor que converte SVG para PNG.",
   "start_url":"./",
   "display":"standalone",
